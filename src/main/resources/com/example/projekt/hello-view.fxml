@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.HelloController">
+    <children>
+        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="640.0" style="-fx-background-color: #000000; -fx-border-color: #ff8800;" VBox.vgrow="ALWAYS">
+            <children>
+                <Button id="one" layoutX="14.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="1">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="two" layoutX="101.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="2">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="four" layoutX="14.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="4">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="five" layoutX="101.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="5">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="three" layoutX="189.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="3">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="six" layoutX="189.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="6">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="seven" layoutX="14.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="7">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="eight" layoutX="101.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="8">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="nine" layoutX="189.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text="9">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="separator" layoutX="275.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="74.0" text=".">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="plus" layoutX="275.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="69.0" prefWidth="74.0" text="+" textFill="#ff8800">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="zero" layoutX="14.0" layoutY="492.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="69.0" prefWidth="250.0" text="0">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="subtract" layoutX="275.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="69.0" prefWidth="74.0" text="-" textFill="#ff8800">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="multiply" layoutX="361.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="69.0" prefWidth="74.0" text="*" textFill="#ff8800">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="divide" layoutX="361.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="69.0" prefWidth="74.0" text="/" textFill="#ff8800">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Button>
+                <Button id="percent" layoutX="275.0" layoutY="492.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="69.0" prefWidth="74.0" text="mod" textFill="#ff8800">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Button>
+                <Button id="CE" layoutX="445.0" layoutY="254.0" mnemonicParsing="false" onAction="#CE" prefHeight="69.0" prefWidth="181.0" text="CE" textFill="#ff8800">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Button>
+                <Button id="sqrt" layoutX="361.0" layoutY="492.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="69.0" prefWidth="74.0" text="sqrt" textFill="#ff8800">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Button>
+                <Button id="delete" layoutX="445.0" layoutY="333.0" mnemonicParsing="false" onAction="#delete" prefHeight="69.0" prefWidth="181.0" text="&lt;-" textFill="#ff8800">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button id="power" layoutX="361.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="69.0" prefWidth="74.0" text="^" textFill="#ff8800">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Button>
+                <Button id="equals" layoutX="445.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleEqualAction" prefHeight="148.0" prefWidth="181.0" text="=" textFill="#ff8800">
+                    <font>
+                        <Font size="49.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="14.0" layoutY="576.0" prefHeight="29.0" prefWidth="612.0" style="-fx-border-color: #FF8800;" text="Kalkulator - projekt zaliczeniowy - Programowanie Obiektowe 2022/2023 3IIZ Sycz Mirosław w65511" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <TextField id="inputField" fx:id="inputField" alignment="CENTER_RIGHT" layoutX="361.0" layoutY="164.0" prefHeight="79.0" prefWidth="265.0" style="-fx-border-color: #FF8800;" text="">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </TextField>
+            <Label layoutX="101.0" layoutY="134.0" text="Input 1:" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField id="outputField" fx:id="outputField" alignment="CENTER" layoutX="14.0" layoutY="44.0" prefHeight="69.0" prefWidth="612.0" style="-fx-border-color: #FF8800;" text="">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </TextField>
+            <Label layoutX="278.0" layoutY="14.0" text="Wynik:" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField id="inputField2" fx:id="inputField2" alignment="CENTER" layoutX="14.0" layoutY="164.0" prefHeight="79.0" prefWidth="250.0" style="-fx-border-color: #FF8800;" text="">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </TextField>
+            <TextField id="mark" fx:id="mark" alignment="CENTER" layoutX="275.0" layoutY="164.0" prefHeight="79.0" prefWidth="74.0" style="-fx-border-color: #FF8800;" text="">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </TextField>
+            <Label layoutX="270.0" layoutY="134.0" text="Symbol:" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="455.0" layoutY="134.0" text="Input 2:" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
